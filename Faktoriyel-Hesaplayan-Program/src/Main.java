@@ -5,8 +5,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Kombinasyon Hesaplama");
-
         // Kullanıcıdan n ve r değerlerini al
         System.out.print("n değeri giriniz: ");
         int n = input.nextInt();
@@ -17,7 +15,7 @@ public class Main {
         // Geçersiz giriş kontrolü
         if (r > n || r < 0) {
             System.out.println("Geçersiz giriş. r, n'den büyük veya negatif olamaz.");
-        } else {
+        }else{
 
             // Faktöriyel hesaplamalarını yap
             int totalN = 1, totalR = 1, totalT = 1;
@@ -34,9 +32,9 @@ public class Main {
                 totalT *= i; // (n-r) faktöriyeli hesaplama
             }
 
-            // Kombinasyon hesaplama
+            // Kombinasyon Hesaplama
             int c = totalN / (totalR * totalT);
-            System.out.println("Kombinasyon: " + c);
+            System.out.println("Kpmbinasyon : " + c);
         }
     }
 }
