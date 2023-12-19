@@ -18,14 +18,17 @@ public class Main {
         if (r > n || r < 0) {
             System.out.println("Geçersiz giriş. r, n'den büyük veya negatif olamaz.");
         } else {
+
             // Faktöriyel hesaplamalarını yap
             int totalN = 1, totalR = 1, totalT = 1;
             for (int i = 1; i <= n; i++) {
                 totalN *= i; // n faktöriyeli hesaplama
             }
+
             for (int i = 1; i <= r; i++) {
                 totalR *= i; // r faktöriyeli hesaplama
             }
+
             int t = n - r;
             for (int i = 1; i <= t; i++) {
                 totalT *= i; // (n-r) faktöriyeli hesaplama
